@@ -7,5 +7,15 @@
     "data": "http://gis.nbtexas.org/arcgis/rest/services/Maps/DataExtract/MapServer/0",
     "website": "http://www.nbtexas.org/index.aspx?NID=1246",
     "attribution": "",
-    "type": "ESRI"
+    "type": "ESRI",
+    "conform": {
+        "type": "csv",
+        "merge": ["PreDir", "StreetName", "StreetType", "PostDir"],
+        "number": "StreetNum",
+        "street": "auto_street",
+        "postcode": "ZIPCode",
+        "city": "LocationName",
+        "lon": "OA:x",
+        "lat": "OA:y"
+    }
 }
